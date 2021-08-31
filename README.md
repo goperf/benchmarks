@@ -2,9 +2,15 @@
 
 ## How to Run
 
+### All profiles (Not a good practice)
 ```bash
 go test -benchmem -benchtime=100000x -cpuprofile=cpu.profile -memprofile=memory.profile -blockprofile=blocking.profile -run=^$ -bench "^(BenchmarkNotPadded)$" ./...
 
+```
+
+### Take specific profiles
+```bash
+go test -benchmem -memprofile=memory.profile -bench "^(BenchmarkEscapeAnalysis)$" ./...
 ```
 
 ## Go test command usage
