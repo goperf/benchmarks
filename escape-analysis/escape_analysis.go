@@ -1,4 +1,4 @@
-package bmark
+package escape
 
 //go:noinline
 func EscapeAnalysis() []int {

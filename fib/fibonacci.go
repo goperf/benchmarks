@@ -1,8 +1,9 @@
-package bmark
+package fib
 
 /*
 Fib returns the nth number in the Fibonacci series.
 Ex:
+
 	0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 ...
 */
 func Fib(n int) int {
