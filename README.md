@@ -2,6 +2,12 @@
 
 ## How to Run
 
+### Basic form of go test command
+
+```bash
+go test -bench=. -benchmem
+```
+
 ### All profiles (Not a good practice)
 ```bash
 go test -benchmem -benchtime=100000x -cpuprofile=cpu.profile -memprofile=memory.profile -blockprofile=blocking.profile -run=^$ -bench "^(BenchmarkNotPadded)$" ./...
